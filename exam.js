@@ -9,8 +9,9 @@ var isTurnOn=true;
 
 //==========================================================
 
-var elem = document.documentElement;
+
 function openFullscreen() {
+	var elem = document.documentElement;
 	var now1 = new Date().getTime(); //unit: millisecond
 	var distance = countDownDate - now1;
   
