@@ -6,7 +6,24 @@ var countDownDate = new Date("Jan 11, 2022 15:30:00").getTime();
 var x = setInterval(countdown, 1000);
 var isTurnOn=true;
 
+
 //==========================================================
+
+var elem = document.documentElement;
+function openFullscreen() {
+	var now1 = new Date().getTime(); //unit: millisecond
+	var distance = countDownDate - now1;
+  
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+
 function shift(){
   isTurnOn=!isTurnOn;
 } 
