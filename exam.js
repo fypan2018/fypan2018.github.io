@@ -1,7 +1,6 @@
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 11, 2022 18:00:00").getTime();
 
-
 // Update the count down every 1 second
 var x = setInterval(countdown, 1000);
 var isTurnOn=true;
